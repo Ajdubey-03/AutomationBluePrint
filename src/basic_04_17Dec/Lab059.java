@@ -62,7 +62,7 @@ public class Lab059 {
         
         }
         
-        System.out.println("Supported type in Switch -> int,char,string");
+        System.out.println("Supported type in Switch -> int,char,string,byte");
         System.out.println("Not supported type in Switch -> boolean,long,float,double");
 	}
 
