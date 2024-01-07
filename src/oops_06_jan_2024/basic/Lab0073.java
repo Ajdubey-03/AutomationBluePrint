@@ -7,10 +7,10 @@ public class Lab0073 {
 		String name = "Akshay";
 		System.out.println(name.concat(" Kumar")); // after concat it is creating another string
 		System.out.println(name + " kumaarr");
-		String name1=name.concat(" Dumeyy");
+		String name1=name.concat(" Dubeyy");
 		System.out.println(name1);
-		System.out.println(name.contains("a"));
-		System.out.println(name);  // Still will be same , because string is immutable 
+		System.out.println(name.contains("a"));  //check string is present or not
+		System.out.println("Remain same :: "+name);  // Still will be same , because string is immutable 
 		String st = new String("Akshay");
 		System.out.println(st ==name);  // Expected false due to st is created i heap area or ob area, Reference is not same for boath
 		System.out.println(st.equals(name));  // Checking values only not reference , Expected true
