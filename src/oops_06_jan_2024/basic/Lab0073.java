@@ -14,6 +14,11 @@ public class Lab0073 {
 		String st = new String("Akshay");
 		System.out.println(st ==name);  // Expected false due to st is created i heap area or ob area, Reference is not same for boath
 		System.out.println(st.equals(name));  // Checking values only not reference , Expected true
+		String p1 = new String("Ujjwal shahu");
+		String p2 = new String("ujjwal ShaHu");
+		System.out.println("compare String values :: "+ p1.equalsIgnoreCase(p2));
+		System.out.println("compare String values with reference :: "+ (p1==p2));
+		
 		
 
 		String Expected_pass = "password@123";
