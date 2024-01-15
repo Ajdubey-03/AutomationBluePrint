@@ -11,7 +11,7 @@ public class RC {
 		d.bark();
 	*/	
 		 Dog f  =  new Hound(); // Dynamic Diaptch
-	        // Runtime Polymorphism
+	                         // Runtime Polymorphism
 	     f.bark();
 
 
