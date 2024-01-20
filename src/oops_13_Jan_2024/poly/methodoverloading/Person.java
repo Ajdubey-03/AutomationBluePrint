@@ -2,28 +2,33 @@ package oops_13_Jan_2024.poly.methodoverloading;
 
 public class Person {
 	
+	public int addNum(int a, int b) {
+		System.out.println("Add two number Methods..");
+		return a+b;
+		
+	}
+	
+	public int addNum(int a , int b, int c ) {
+		System.out.println("Add three number Methods method overloading..");
+		return a+b+c;
+	}
+	
+	public void readBook(String bk) {
+		System.out.println("Person Class Std readingBook ::" + bk);
+	}
+	
+	
+}
 
-    // Method OverLoading -> multiple methods with same name, but different argument.
-	
-	public void gift(String x) 
-	{
-		System.out.println("M a gift method of with takin one parameter of String type:  " + x);
+class Person2 extends Person{
+	public void readBook(String book) {
+		System.out.println("Reading book of child class :: " + book +"name");
 	}
-	
-	public void gift(String fName, String lName) 
-	{
-		System.out.printf("gift method again by taking 2 parameter  of string firsName is %S and lastName is %S" ,fName, lName);
-	}
-	
-	public void gift(int price) 
-	{
-		System.out.printf("\ngift method taking of integer param and giftPice are %d" ,price);
-	}
-	
-	public boolean gift(int a, int b) 
-	{
-		return (a>b);
-	}
-	
+}
 
+class Person3{
+	public void print(Person p , String book) {
+		System.out.println("Displaying the readMethods from parent class or child class\n it is called as Runtime polymorphism..");
+		p.readBook(book);
+	}
 }

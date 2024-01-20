@@ -3,12 +3,21 @@ package oops_13_Jan_2024.poly.methodoverloading;
 public class RC {
 
 	public static void main(String[] args) {
-		Person p = new Person();
-		p.gift("Akshay");
-		p.gift("Akshay", "Akshay");
-		p.gift(154);
-		System.out.println("\n"+ p.gift(10, 15));
-		System.out.println(p.gift(16, 15));
+	//System.out.println("Compile time polymorphism......can acheived by method overloading");
+	 Person p = new Person2();
+//	  int sum=p.addNum(10, 12);
+//	  System.out.println(sum);
+//	  int sum1 = p.addNum(10,12,15);
+//	  System.out.println(sum1);
+	// p.readBook("Java");
+//	 
+//	 Person p1 = new Person2();
+//	 p1.readBook("Python");
+//	
+	 Person3 p3 = new Person3();
+	 p3.print(p, "Ap Rahsya");
+	 
+	
 
 
 	}
